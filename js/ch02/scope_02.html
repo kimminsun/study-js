@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+   body { background-color : gray; 
+				  font-size : 15pt;
+				  width : 70%;
+				  margin : auto;
+				  }
+  </style>
+  <script>
+  function test(){
+	  age=43; // 전역
+  }
+  age=11; //전역
+  test();
+  document.write(age+"<br>"); //43
+  </script>
+ </head>
+ <body>
+  
+ </body>
+</html>

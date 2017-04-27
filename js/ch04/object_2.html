@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css\styles.css">
+  </style>
+  <script>
+  var student={
+	  이름:'나미림',
+	  국어:90,
+	  영어:80,
+	  수학:100,
+	  자스:98,
+	  output:'이미존재' //객체의 속성,전역변수 충돌
+  }
+  var output='';
+  with(student){ //student. 을 대ㅐ신
+  output+='이름:'+이름+'\n';
+  output+='국어:'+국어+'\n';
+  output+='영어:'+영어+'\n';
+  output+='수학:'+수학+'\n';
+  output+='자스:'+자스+'\n';
+  output+='총점:'+(국어+국어+영어+수학+자스)+'\n';}
+alert(window.output);
+  </script>
+ </head>
+ <body>
+ </body>
+</html>

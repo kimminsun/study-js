@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>p27</title>
+  <link rel = "stylesheet" href="css/styles.css">
+  <script>
+  var s="";
+	function lotto() {
+		for (i=0; i<6; i++)
+		{
+			s+=(Math.floor(Math.random()*100))+" ";
+			
+		}
+		result.innerHTML=s;
+		s="";
+	}
+	</script>
+ </head>
+ <body>
+	<input type = button value="로또추첨" onClick=lotto()></input><br>
+	결과 : <div id = "result"></div>
+ </body>
+</html>

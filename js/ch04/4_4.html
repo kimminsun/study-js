@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css\styles.css">
+  </style>
+  <script>
+  window.onload=init;
+  function init(){
+	  var now=new Date();
+	  var later=new Date('December 9,2015');
+	  var interval;
+	  var one_day=1000*60*60*24;
+	  var message="";
+	  var output=document.getElementById("output");
+	  if(later>now){
+		  interval=later.getTime()-now.getTime();
+		  message="크리스마스까지 남은 날짜 : ";
+	  }else{
+		  interval=now.getTime()-later.getTime();
+		  message="크리스마스로부터 지난 날짜 : ";
+	  }
+	  interval=Math.floor(interval/one_day);
+	  message+=interval+"일";
+	  alert(message);
+  }
+  </script>
+ </head>
+ <body>
+	<div id='output'></div>
+ </body>
+</html>

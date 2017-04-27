@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  table, th, td { border: 1px solid black;
+				  padding :10px;
+				  border-collapse:collapse;}
+  .num { text-align : right;}
+	div { width : 300px; padding : 5px; font-weight : bold;}
+	output { background : silver; padding : 5px;}
+  </style>
+  <script>
+  function calculate(){//이벤트 핸들러
+	  var inputs = document.getElementsByTagName("input"); //getElementById
+	  var sumitem = document.getElementById("sumitem");
+	  var sumprice = document.getElementById("sumprice");
+
+	  var itemOfsum=0; //수량
+	  var priceOfsum=0; //가격
+
+	  for(var i=0;i<inputs.length; i++)
+	  {
+		  //수량
+		  itemOfsum += Number(inputs[i].value); //문자열 더하기 => 숫자로
+		  //가격
+		  priceOfsum+=Number(inputs[i].value) * document.getElementById(inputs[i].id + "p").innerHTML;
+	  }
+	  //alert(itemOfsum);
+	  //alert(priceOfsum);
+	  sumitem.value=itemOfsum;
+	  sumprice.value=priceOfsum;
+
+	}
+  </script>
+ </head>
+ <body>
+ <form id="myform"method="post" oninput="calculate()">
+ <table>
+ <tr><th>상품</th><th>가격(원)</th><th>수량</th></tr>
+ <tr>
+	<td>키보드</td>
+	<td id="i1p" class="num">40000</td>
+	<td><input type="number" min=0 max=100 id="i1"></td>
+	</tr>
+ <tr>
+	<td>마우스</td>
+	<td id="i2p" class="num">20000</td>
+	<td><input type="number" min=0 max=100 id="i2"></td>
+	</tr>
+ <tr>
+	<td>모니터</td>
+	<td id="i3p" class="num">250000</td>
+	<td><input type="number" min=0 max=100 id="i3"></td>
+	</tr>
+ </table>
+ <div>장바구니에 담을 물건<output for="i1 i2 i3" id="sumitem"> </output> 개</div>
+ <div>총 구입가격 <output for="i1p i2p i3p" id="sumprice"></output> 원</div>
+<!--<div><input type="submit"></div>-->
+ </form>
+ </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+ <meta charset="utf-8">
+<title>자바스크립트</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="javascript">
+function agreeCheck(frm)
+{
+   if (frm.checkButton.disabled==true)
+    frm.checkButton.disabled=false
+   else
+    frm.checkButton.disabled=true
+}
+
+</script>
+</head>
+<body>
+<form name="form"> 
+<textarea cols="40" rows="5"> 
+
+</textarea><br>
+<input type="checkbox" name="agree" onClick="agreeCheck(this.form)">
+위의 뻘글에 동의하십니까?
+<input type="button" name="checkButton" value=" 확 인 " disabled>
+</form>
+</body>
+</html>

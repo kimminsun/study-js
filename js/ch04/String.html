@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+<script>
+window.onload=myFunction;
+function myFunction(){
+	var str="HELLO WORLD";
+	str=str.charAt(0);
+	document.write(str+"<br>");
+	str=str.charCodeAt(0);
+	document.write(str+"<br>");
+
+	var str1="How";
+	var str2="Are You?";
+	var res=str1.concat(str2);
+	document.write(res+"<br>");
+	var res=String.fromCharCode(65);
+	document.write(res+"<br>");
+
+	var str="Hello world,welcome to the universe.";
+	var n=str.indexOf("welcome");
+	document.write(n+"<br>");
+	var n=str.lastIndexOf("universe");
+	document.write(n+"<br>");
+	var str3=str.slice(1,4);
+	document.write(str3+"<br>");
+
+	var str4=str.substr(1,4);
+	document.write(str4+"<br>");
+	var str5=str.substring(1,4);
+	document.write(str5+"<br>");
+}
+</script>
+
+
+ </head>
+ <body>
+ myFunction();
+ </body>
+</html>

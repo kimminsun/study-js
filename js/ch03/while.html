@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>while</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+ //while 문을 이용 1초동안 문장 실행(브라우저)하는 횟수 count=> 브라우저 성능 테스트
+ //현재시간 발생 -> +1000 -> 새로운 시간을 발생
+
+ var count=0;
+ var date=new Date();
+ var startTime=date.getTime();
+
+ while(new Date().getTime()<startTime+1000){
+	 count++;
+ }
+ alert(count);
+	 
+
+  </script>
+ 
+ </head>
+ <body>
+
+ </body>
+</html>

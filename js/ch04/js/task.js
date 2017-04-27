@@ -1,0 +1,30 @@
+window.onload=init;
+function init(){
+	document.getElementById("theForm").onsubmit=addTask;
+}
+var task_array =[];
+function addTask(){
+	//1. task, output 읽어오기
+	var task=document.getElementById("task").value;
+	var output=document.getElementById("output");
+	var message="";
+	//2. task 입력 -> array[i] -> push
+	if(task){
+		task_array[task_array.length]=task;
+		//task_array.push(task.value);	
+	}
+
+	message="업무가"+task_array.length+"개 있습니다.\n";
+	output.innerText=message;
+	for(var i=0;i<task_array.length; i++){
+		message+=(i+1)+"."+task_array[i]+"\n";
+		output.innerText=message;
+		
+	}
+	output.innerText=message;
+	return false;
+	//3. 메세지 출력-> 업무가 i개 있습니다.
+	
+
+
+}

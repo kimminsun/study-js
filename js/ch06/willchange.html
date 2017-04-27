@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<title>willnotchange</title>
+  </head>
+  <script>
+  function willchange(y){
+	  document.write("함수내부의 전달 직후 y:"+y.num+"<br>");
+	  y.num=2;
+	  document.write("함수내부의 변화 후 y:"+y.num+"<br>");
+  }
+  var y={num:1};
+  document.write("원 데이터 y :"+y.num+"<br>");
+  willchange(y);
+ //함수 내부에서 값을 변경하면,변경된 값이 함수를 종료해도 그대로 유지된다. 
+  document.write("함수 호출 이후 y :"+y.num+"<br>");
+  </script>
+ <body>
+	
+ </body>
+</html>

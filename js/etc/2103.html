@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="2103.css">
+<title>2103</title>
+<script></script>
+</head>
+<body>
+	<form action="#" method="post" id="theForm">
+	<fieldset><legend>예약 정보 확인</legend>
+	<div><label for="name">예약자이름</label><input type="text" id="name" name="name" required></div>
+	<div><label for="room">방갯수</label><input type="number" id="room" name="room" required></div>
+	<div><label for="roomtype">방타입</label>
+	<select name="roomtype" id="roomtype" required>
+	<option value="Standard">Standard-10,000원</option>
+	<option value="Double">Double-15,000원</option>
+	<option value="JuniorSuit">Junior Suit-20,000원</option>
+	<option value="Suit">Suit-25,000원</option>
+	</select></div>
+	<div><label for="start">체크인날짜</label><input type="text" id="start" placeholder="MM/DD/YYYY" required></div>
+	<div><label for="end">체크아웃날짜</label><input type="text" id="end" placeholder="MM/DD/YYYY" required></div>
+	<div><label for="roomnumber">방번호</label><input type="text" id="roomnumber" disabled></div>
+	<div><label for="money">투숙비</label><input type="text" id="money" disabled></div>
+	<input type="submit" value="Calculate" id="submit">
+	</fieldset>
+	</form>
+	<script src="2103.js"></script>
+</body>
+</html>

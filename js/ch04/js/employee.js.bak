@@ -1,0 +1,10 @@
+window.onload=init;
+  function init(){
+	document.getElementById("theForm").onsubmit=add;
+}
+function add(){
+
+
+
+
+}

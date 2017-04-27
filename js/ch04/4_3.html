@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css\styles.css">
+  </style>
+  <script>
+  window.onload=init;
+  function init(){
+	var today=new Date();
+	var message='오늘의 날짜는'+today.toLocaleDateString();
+	message+='시간은 '+today.getHours()+'.'+today.getMinutes();
+
+	var output=document.getElementById('output');
+
+	if(output.textContent!==undefined){
+		output.textContent=message;
+	}
+	else{
+		output.innerText=message;
+	}
+  }
+  </script>
+ </head>
+ <body>
+	<div id='output'></div>
+ </body>
+</html>

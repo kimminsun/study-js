@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css" href="css\styles">
+  input:required{ border-color: #88a; background:green;}
+  input:invalid{ border-color: #e88; background:red;}
+  </style>
+  <script>
+  </script>
+ </head>
+ <body>
+ <form name="myForm" id="" action="">
+ <div><label>텍스트를 입력해 주세요.<br>
+ 예) 홍길동123</label> <input type="text" required><br>
+ <div><label>이  름 : </label><input type="text" required ><br></div>
+ <div><label>이메일 : </label><input type="email" autofocus><br></div>
+ <div><label> 연락처 :</label> <input type="tel"></div>
+ <div><label>검 색 :</label> <input type="search" results="0"></div>
+ <div><label>전화번호 :</label><input type="tel" pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$" required></div>
+ <div><label>url주소 :</label> <input type="url"></div>
+ <div><label>이메일주소 :</label> <input type="email"></div>
+ <div><label>시간 :</label> <input type="time"></div>
+ <div><label>날짜 :</label> <input type="date"></div>
+ <div><label>주단위 :</label> <input type="week"></div>
+ <div><label>달단위 :</label> <input type="month"></div>
+ <div><label>색상 :</label> <input type="color"></div>
+ <div><label>음량 :</label> <input type="range" min="0" max="100" value="10"></div>
+ <div><label>수량 :</label> <input type="number" min="0" max="100" value="1"></div>
+ <progress value="10" max="100"></progress>
+
+ <input type="submit">
+ </form>
+ </body>
+</html>

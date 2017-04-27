@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Window Test</title>
+  <script>
+  var child = window.open('','','width=300,height=300');
+  child.document.write("<h1>From Parent window</h1>");
+  child.moveTo(10,10);
+
+  setInterval(function(){
+	child.moveBy(50,50);
+  
+  
+  
+  },1000);//익명함수
+  </script>
+ </head>
+ <body>
+
+ </body>
+</html>

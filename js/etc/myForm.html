@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+ <head>
+ <meta charset="utf-8">
+  <title>회원정보</title>
+  <link rel="stylesheet" href="myForm.css">
+ </head> 
+ <script language="javascript">
+function agreeCheck(frm)
+{
+   if (frm.checkButton.disabled==true)
+    frm.checkButton.disabled=false
+   else
+    frm.checkButton.disabled=true
+}
+
+</script>
+ <body>
+	<form action ="" method="" id="myForm" name="myForm">
+	<fieldset>
+	<legend>회 원 정 보</legend> 
+	<p>*모든 내용은 필수입력입니다.</p>
+	 <div><label for="firstname">***성(性)***</label><input type="text" id="firstname"></div>
+	 <div><label for="lastname">***이름***</label><input type="text" id="lastname"></div>
+	 <div><label for="email">이메일주소</label><input type="text" id="email"></div>
+	 <div><label for="mobile">전화(mobile)번호</label><input type="text" id="mobile"></div>
+	 <div><label for="dong">거주 동(洞)</label><input type="text" id="dong"></div>
+	 <div><label for="gu">거주 구(區)</label>
+	<div><select name="gu" id="gu">
+	<option value="main">구를 선택해 주세요.</option>
+	<option value="jongro">종로구</option>
+	<option value="joong">중구</option>
+	<option value="young">용산구</option>
+	<option value="eun">은평구</option>
+	<option value="bong">도봉구</option>
+	<option value="sung">성북구</option>
+	<option value="moon">동대문구</option>
+	</select></div>
+	 <div><label for="adress">나머지 주소</label><input type="text" id="adress"></div>
+	 <div><input type="checkbox" value="check" name="check" id="check" onClick="agreeCheck(this.form)" ><label for="agree">위 정보 제공에 동의합니다.</label></input></div>
+	<div><input type="submit" name="checkButton" id="checkButton" value="회원가입" disabled></input></div>
+	</fieldset>
+ </body>
+ <script src="myForm.js"> </script>
+</html>

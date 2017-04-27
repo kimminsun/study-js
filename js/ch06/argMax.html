@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<title>argMax</title>
+  </head>
+  <script>
+  //매개변수의 개수에 관계없음.
+  //MAX 메서드
+  function max(){
+	  var init_max = arguments[0];
+	  for(var i=1; i<arguments.length;i++){
+		  if(arguments[i]>init_max){
+			  init_max=arguments[i];
+		  }
+	  }
+	  return init_max;
+  }
+  function min(){
+	  var init_min = arguments[0];
+	  for(var i=1; i<arguments.length;i++){
+		  if(arguments[i]<init_min){
+			  init_min=arguments[i];
+		  }
+	  }
+	  return init_min;
+  }
+
+
+  alert(max(1,2,3));
+  alert(max()); //undefined
+  alert(min(4,2,10,23));
+  alert(min(34,10,23,77));
+  </script>
+ <body>
+	
+ </body>
+</html>

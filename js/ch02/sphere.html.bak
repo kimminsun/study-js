@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>ex_5</title>
+  <link rel="stylesheet" href="css\styles.css">
+ </head>
+ <body>
+ <form id="myform" name="" method=""action="">
+ <fieldset>
+ <legend>구의 부피 계산기</legend>
+ <div><label>반 지 름</label><br>
+ <input type="text" required min="0"  id="radius"></div>
+
+ <div><label>부 피</label>
+ <input type="text"id="total"><br><div>
+
+ <div><input type="submit" value="계산" id="submit"></div>
+
+ </fieldset>
+ </form>
+ <script src="js\sphere.js"></script>
+ </body>
+</html>

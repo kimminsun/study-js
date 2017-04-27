@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css" href="css\styles">
+  input:required{ border-color: #88a; background:green;}
+  input:invalid{ border-color: #e88; background:red;}
+  </style>
+  <script>
+  function gotourl(){
+	  var myurl = "http://"+document.getElementById("url").value;
+	  open(myurl);
+
+  }
+  </script>
+ </head>
+ <body>
+ <form name="myForm" id="" action="">
+ <label>goto</label>
+ <input type="text" id=url name="homepage" list="homepages" autofocus>
+ <datalist id="homepages">
+	<option value="www.google.com">
+	<option value="www.naver.com">
+	<option value="www.daum.net">
+	<option value="www.facebook.com">
+</datalist>
+<input type="submit" value="이동" onclick=" gotourl()">
+ </form>
+ </body>
+</html>

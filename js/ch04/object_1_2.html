@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css\styles.css">
+  </style>
+  <script>
+  var product={
+	  제품명:'건조망고',
+	  유형:'당절임',
+	  성분:'설탕,망고'
+  };
+  alert(product.제품명);
+  alert(product.유형);
+  alert(product.성분);
+
+  var output='';
+  for(var key in product)
+  {
+	  output+='★'+key+'.'+product[key]+'\n';
+  }
+  alert(output);
+
+  var person={
+	  name:'나미림',
+	  eat:function(food){
+		  alert(this.name+'이'+food+'를 먹습니다.');}
+  };//자기가 속한 부모객체
+  person.eat('피자');
+  </script>
+ </head>
+ <body>
+ </body>
+</html>

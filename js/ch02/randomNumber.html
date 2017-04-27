@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>randomNumber</title>
+  <style>
+		 body { background-color : yellow; 
+				  font-size : 15pt;
+				  width : 70%;
+				  margin : auto;
+				  }
+	</style>
+  <script>
+  window.onload=init;
+
+  var buttonA;
+  var buttonB; //전역 변수 선언
+
+  function init(){
+	buttonA=document.getElementById("buttonA");//id로 html요소 얻어오기
+	buttonB=document.getElementById("buttonB");
+
+	buttonA.onclick=function(){
+		result.innerHTML=Math.floor(Math.random()*10+1);
+	} 
+	buttonB.onclick=function(){
+		result.innerHTML=Math.floor(Math.random()*100+1);
+	}
+  }
+
+
+  </script>
+ </head>
+ <body>
+  <button id="buttonA">1부터 10사이의 무작위 수</button>
+  <button id="buttonB">1부터 100사이의 무작위 수</button><br>
+  결과 :<div id="result"></div> <!-- 밑에 결과값 보여주기-->
+ </body>
+</html>

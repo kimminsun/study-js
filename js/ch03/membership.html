@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+ <head>
+ <meta charset="utf-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+ </head> 
+ <body>
+	<form action ="" method="" id="myform">
+	<fieldset>
+	<legend>멤버십 가입</legend>
+	<p>멤버십에 가입하세요. 2년 이상을 선택하시면 20%의 년회비 할인혜택이 있습니다.</p>
+	<div><label for="type">type</label>
+	<select name="type" id="type" required></div>
+	<option value="basic"> Basic - 10000원</option>
+	<option value="premium"> Premium - 15000원</option>
+	<option value="gold"> Gold - 20000원</option>
+	<option value="platinum"> Platinum - 25000원</option>
+	</select></div>
+	<div><label for="year">기간</label>
+	<input type="number" name="years" id="years" value="1" min="1" max="5" required></div>
+
+	<div><label for="cost">년회비</label>
+	<input type="text" name="cost" id="cost" disabled></div>
+
+	<input type="submit" value="calculate" id="submit"></div>
+	</fieldset>
+ </body>
+  <script src="js/membership.js"> </script>
+</html>

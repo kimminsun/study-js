@@ -1,0 +1,93 @@
+/*
+dark blue: 212B40
+gray-blue: 547B97
+gray-green-blue: BADCDD
+light-green: C2E078
+*/
+/*
+dark blue: 1B1D26
+dark green: 425955
+gray-green: 778C7A
+off-white: F1F2D8
+tan: BFBD9F
+*/
+
+body{
+font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+color: #1b1d26;
+background-color: #ffd9de;
+}
+p, h1, form, button{border:0; margin:0; padding:0;}
+.spacer{clear:both; height:2px;}
+/* ----------- My Form ----------- */
+form{
+margin:0 auto;
+width:430px;
+padding:25px;
+background-color: #ffffff;
+border:solid 8px #91a4fb;
+}
+
+/* ----------- stylized ----------- */
+legend{
+	text-align:center;
+	font-size:25px;
+	font-weight:bold;
+}
+ h1 {
+font-size:14px;
+font-weight:bold;
+text-align:center;
+margin-bottom:8px;
+}
+ p{
+font-size:11px;
+color:#666666;
+font-weight:bold;
+text-align:left;
+margin-bottom:20px;
+padding-bottom:10px;
+}
+ label{
+display:block;
+font-weight:bold;
+text-align:center;
+width:148px;
+float:left;
+}
+ select{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #BFBD9F;
+width:166px;
+margin:2px 0 20px 10px;
+}
+ input{
+float:left;
+font-size:12px;
+padding:5px 5px;
+text-align:center;
+border:solid 1px #BFBD9F;
+width:160px;
+margin:2px 0px 8px 10px;
+
+
+}
+#check{
+	margin:0px 5px 10px 0px;
+	width: 100px;
+	float:left;
+	margin-left:55px;
+	margin-right:auto;
+
+}
+#checkButton{
+	float:left;
+	margin-left:130px;
+	margin-right:45px;
+}
+
+
+
